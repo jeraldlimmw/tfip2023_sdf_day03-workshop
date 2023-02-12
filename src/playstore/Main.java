@@ -28,7 +28,7 @@ public class Main {
         String line;
         int discard = 0;
         while ((line = br.readLine()) != null) {
-            String[] cols = line.split(",");
+            String[] cols = line.split(",(?!\s)");
             String appName = cols[0];
             String category = cols[1];
             String col3 = cols[2];
